@@ -1,0 +1,106 @@
+/* winnign-sec css starts here */
+.winning-sec {
+  padding: 50px 0px;
+}
+.winning-sec {
+  padding: 50px 0px;
+}
+.winning-sec h3 {
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #000000;
+}
+.winning-sec h3 span {
+  font-weight: 400;
+}
+.winning-sec p {
+  color: #7f7f7f;
+  font-family: "sf-text-pro";
+  font-size: 16px;
+}
+/* winnign-sec css ends here */
+/* Experience-sec  css starts here */
+.Experience-sec {
+  padding: 50px 0px;
+}
+.Experience-sec .content-wrapper {
+  background: #000000;
+  padding: 99px 55px 100px 55px;
+}
+.Experience-sec p {
+  color: #7b7b7b;
+  font-family: "sf-text-pro";
+  font-size: 14px;
+}
+.Experience-sec h3 {
+  color: #fff;
+  font-family: "SF Pro Display";
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.Experience-sec h3 span {
+  font-weight: 400;
+}
+.Experience-sec img.experience-img {
+  height: 469px;
+}
+/* Experience-sec  css ends here */
+/* Business-sec  css starts here */
+.Business-sec {
+  padding: 50px 0px;
+}
+.Business-sec h3 {
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #000000;
+}
+.Business-sec h3 span {
+  font-weight: 400;
+}
+.Business-sec p {
+  color: #7f7f7f;
+  font-family: "sf-text-pro";
+  font-size: 16px;
+}
+/* Business-sec css ends here */
+/* team-sec  css starts here */
+.team-sec {
+  padding: 50px 0px;
+}
+.team-sec .content-wrapper {
+  text-align: center;
+}
+.team-sec h3 {
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #000000;
+}
+.team-sec h3 span {
+  font-weight: 400;
+}
+.team-sec p {
+  color: #7f7f7f;
+  font-family: "sf-text-pro";
+  font-size: 16px;
+}
+.team-sec .team-name-wrapper {
+  background: #0066cce0;
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+  margin-top: -49px;
+  position: relative;
+}
+.team-card-wrapper {
+  margin: 40px 0px;
+}
+.team-sec .team-name-wrapper h5 {
+  margin: 0px;
+  font-family: "SF Pro Display";
+  font-size: 25px;
+}
+/* team-sec  css ends here */

@@ -1,0 +1,22 @@
+.manager-sec .manager-card-wrapper h5 {
+  color: #0066cc;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 23px;
+  font-size: 20px;
+}
+.manager-sec .manager-card-wrapper h3 {
+  font-size: 33px;
+  font-weight: 700;
+  color: #000;
+}
+.manager-sec .manager-card-wrapper p {
+  color: #7f7f7f;
+  font-family: "sf-text-pro";
+}
+.manager-sec .manager-card-wrapper {
+  margin: 20px 0px;
+}
+.manager-sec {
+  padding: 40px 0px;
+}

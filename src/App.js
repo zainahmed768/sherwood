@@ -2,12 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // style.css starts here
 import "../src/assets/css/style.css";
 // style.css ends here
-import Home from "./pages/Home/Home";
-
+import PublicRoutes from "./routes/PublicRoutes";
+import "@popperjs/core";
 function App() {
   return (
     <>
-      <Home />
+      <PublicRoutes />
     </>
   );
 }

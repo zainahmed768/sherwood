@@ -6,11 +6,11 @@ const Footer = () => {
     <>
       {/* <!-- Footer Start Here --> */}
       <footer>
-        <div class="container">
-          <div class="newsletter">
-            <div class="row align-items-center">
-              <div class="col-lg-7">
-                <div class="heading">
+        <div className="container">
+          <div className="newsletter">
+            <div className="row align-items-center">
+              <div className="col-lg-7">
+                <div className="heading">
                   <h4>Subscribe to Our Newsletter</h4>
                   <p>
                     uspendisse mollis ante imperdiet, dictum sapien eu, suscipit
@@ -18,25 +18,25 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <div class="newsletter_box">
-                  <div class="form-group">
+              <div className="col-lg-5">
+                <div className="newsletter_box">
+                  <div className="form-group">
                     <input
                       type="email"
                       placeholder="Your Email Addrress"
-                      class="form-control"
+                      className="form-control"
                     />
-                    <button class="btn-sherwood">Submit</button>
+                    <button className="btn-sherwood">Submit</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4 p-0 m-0">
-              <div class="logoDv">
+          <div className="row">
+            <div className="col-lg-4 p-0 m-0">
+              <div className="logoDv">
                 <figure>
-                  <img src={footer_logo} class="img-fluid" />
+                  <img src={footer_logo} className="img-fluid" />
                 </figure>
               </div>
               <p>
@@ -44,18 +44,18 @@ const Footer = () => {
                 industry.Lorem Ipsum has been the industry's standard dummy text
                 .
               </p>
-              <div class="button-group">
-                <a href="#" class="btn-sherwood">
+              <div className="button-group">
+                <a href="#" className="btn-sherwood">
                   Proof Claims
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 p-0 m-0">
-              <div class="footer-content scnd-content">
-                <div class="head">
+            <div className="col-lg-5 p-0 m-0">
+              <div className="footer-content scnd-content">
+                <div className="head">
                   <h4>Quick links</h4>
                 </div>
-                <ul class="footer-link">
+                <ul className="footer-link">
                   <li>
                     <a href="#">SHERWOOD PARTNERS</a>
                   </li>
@@ -79,12 +79,12 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 p-0 m-0">
-              <div class="footer-content">
-                <div class="head">
+            <div className="col-lg-3 p-0 m-0">
+              <div className="footer-content">
+                <div className="head">
                   <h4>CONTACT US</h4>
                 </div>
-                <ul class="info">
+                <ul className="info">
                   <li>SHERWOOD PARTNERS INC </li>
                   <li> SILICON VALLEY | LOS ANGELES | NEW YORK </li>
                   <li>3945 FREEDOM CIRCLE SUITE 560 SANTA CLARA, CA 95054</li>
@@ -101,14 +101,14 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="#">
-                      <img src={linkedin} class="img-fluid" />
+                      <img src={linkedin} className="img-fluid" />
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="copyright text-center">
+          <div className="copyright text-center">
             <p>© Sherwood Partners Service 2022. All rights reserved.</p>
           </div>
         </div>

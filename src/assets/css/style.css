@@ -1,12 +1,12 @@
 /* Font Family */
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 @font-face {
-  font-family: 'sf-text-pro';
-  src: url('../fonts/sf-text-pro.ttf');
+  font-family: "sf-text-pro";
+  src: url("../fonts/sf-text-pro.ttf");
 }
 @font-face {
-  font-family: 'sf_pro_m';
-  src: url('../fonts/FontsFree-Net-SFProText-Medium-1.ttf');
+  font-family: "sf_pro_m";
+  src: url("../fonts/FontsFree-Net-SFProText-Medium-1.ttf");
 }
 /* Font Family */
 
@@ -20,6 +20,7 @@ html {
 }
 body {
   font-family: "sf-text-pro";
+  overflow-x: hidden;
 }
 h2,
 h3,
@@ -50,7 +51,27 @@ h5 {
 figure {
   margin-bottom: 0;
 }
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
 
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
 /* Inner Pages Banner */
 /* .universal_banner {
   padding: 55px 0;
@@ -236,7 +257,7 @@ header .canvas_btn {
 #headerTop .navbar_menus ul li a {
   text-decoration: none;
   color: var(--second-color);
-  font-family: 'sf-text-pro';
+  font-family: "sf-text-pro";
   font-size: 14px;
 }
 #headerTop .navbar_menus ul li .dropdown ul.dropdown-menu li a {
@@ -290,6 +311,9 @@ header .canvas_btn {
   border-radius: 50%;
   font-size: 14px;
   transition: 0.6s;
+}
+.navbar_menus .dropdown:hover .dropdown-menu {
+  display: block !important;
 }
 #headerTop .right-menus ul.icons li a:hover i {
   background: var(--second-color);
@@ -388,7 +412,42 @@ header .canvas_btn {
   }
 }
 /* Header Css End Here */
+/* page header starts here */
 
+.pageheader {
+  padding: 50px 0px;
+  background-image: url("../img/pageheaderbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pageheader .content-wrapper {
+  text-align: center;
+}
+.pageheader .content-wrapper ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+.pageheader .content-wrapper ul li {
+  margin: 0px 10px;
+}
+.pageheader .content-wrapper ul li a {
+  text-decoration: none;
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.pageheader h4 {
+  font-family: "SF Pro Display";
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+/* page header ends here */
 /* Banner Css Start Here */
 .banner_sec {
   position: relative;
@@ -465,6 +524,10 @@ header .canvas_btn {
 }
 .about_sec .about_content .button-group {
   padding-top: 30px;
+}
+.about_sec .about_content h3 {
+  font-size: 3.5em;
+  font-weight: 900;
 }
 .about_sec .about_content .button-group a.lnk-btn {
   text-decoration: none;
@@ -644,8 +707,8 @@ header .canvas_btn {
   box-shadow: 0px 0px 0px 2px #000;
   border-color: #fff;
 }
-@media(max-width:1399px){
-  .testimonials_sec button.slick-prev.slick-arrow:before{
+@media (max-width: 1399px) {
+  .testimonials_sec button.slick-prev.slick-arrow:before {
     right: -24.5rem;
   }
 }
@@ -657,15 +720,15 @@ header .canvas_btn {
     right: -24.5rem;
   }
 }
-@media (max-width: 1199px){
+@media (max-width: 1199px) {
   .testimonials_sec button.slick-prev.slick-arrow:before {
     right: -18.5rem;
-}
-@media(max-width:1100px){
-  .testimonials_sec button.slick-next.slick-arrow:before{
-    bottom: -11rem;
   }
-}
+  @media (max-width: 1100px) {
+    .testimonials_sec button.slick-next.slick-arrow:before {
+      bottom: -11rem;
+    }
+  }
 }
 
 @media (max-width: 1100px) {
@@ -786,7 +849,7 @@ footer .footer-content ul.footer-link li a {
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
-  font-family: 'sf_pro_m';
+  font-family: "sf_pro_m";
   text-shadow: 0 0 black;
 }
 footer .footer-content ul.footer-link li {

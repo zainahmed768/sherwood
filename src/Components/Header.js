@@ -34,6 +34,7 @@ const Header = () => {
                         id="dropdownMenuButton1"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        onClick={() => (window.location.href = "about")}
                       >
                         About Us
                       </button>
@@ -67,6 +68,7 @@ const Header = () => {
                         id="dropdownMenuButton1"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        onClick={() => (window.location.href = "services")}
                       >
                         Services
                       </button>

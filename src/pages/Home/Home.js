@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Slider from "react-slick";
+import anime from "animejs/lib/anime.es.js";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,29 +65,76 @@ const Home = () => {
     },
   ];
   // services data
+  useEffect(() => {
+    var textWrapper = document.querySelector(".ml2");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    );
+
+    anime
+      .timeline({
+        loop: true,
+      })
+      .add({
+        targets: ".ml2 .letter",
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i,
+      })
+      .add({
+        targets: ".ml2",
+        opacity: 0,
+        duration: 600,
+        easing: "easeOutExpo",
+        delay: 500,
+      });
+
+    anime
+      .timeline({ loop: true })
+      .add({
+        targets: ".ml15 .word",
+        scale: [14, 1],
+        opacity: [0, 1],
+        easing: "easeOutCirc",
+        duration: 800,
+        delay: (el, i) => 800 * i,
+      })
+      .add({
+        targets: ".ml15",
+        opacity: 0,
+        duration: 900,
+        easing: "easeOutExpo",
+        delay: 800,
+      });
+  }, []);
   return (
     <>
       <Header />
       {/* // <!-- Banner Sec Start Here --> */}
-      <section class="banner_sec">
-        <div class="container-fluid p-0">
-          <div class="banner_image wow animate__animated animate__zoomIn animate__delay-2s">
+      <section className="banner_sec">
+        <div className="container-fluid p-0">
+          <div className="banner_image wow animate__animated animate__zoomIn animate__delay-2s">
             <figure>
-              <img src={banner_img} class="img-fluid" />
+              <img src={banner_img} className="img-fluid" />
             </figure>
           </div>
         </div>
-        <div class="banner_content">
-          <div class="container">
-            <h2 class="title wow animate__animated animate__fadeInDown animate__delay-2s">
+        <div className="banner_content">
+          <div className="container">
+            <h2 className="title wow animate__animated animate__fadeInDown animate__delay-2s">
               Sherwood
             </h2>
-            <h5 class="wow animate__animated animate__fadeInDown animate__delay-3s">
+            <h5 className="wow animate__animated animate__fadeInDown animate__delay-3s">
               THE GOLD STANDARD...Since 1992
             </h5>
-            <div class="button-group wow animate__animated animate__fadeInDown animate__delay-5s">
-              <a href="#" class="lnk-btn">
-                Learn more <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <div className="button-group wow animate__animated animate__fadeInDown animate__delay-5s">
+              <a href="#" className="lnk-btn">
+                Learn more{" "}
+                <i className="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -94,15 +142,15 @@ const Home = () => {
       </section>
       {/* <!-- Banner Sec End Here --> */}
       {/* <!-- About Us Sec Start Here --> */}
-      <section class="about_sec">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="about_content">
-                <div class="title wow animate__animated animate__slideInLeft">
-                  <h3 class="ml2">About Us</h3>
+      <section className="about_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="about_content">
+                <div className="title wow animate__animated animate__slideInLeft">
+                  <h3 className="ml2">About Us</h3>
                 </div>
-                <div class="description wow animate__animated animate__fadeInLeft animate__delay-1s">
+                <div className="description wow animate__animated animate__fadeInLeft animate__delay-1s">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse nisl nisl, venenatis at lectus ut, varius
@@ -118,20 +166,20 @@ const Home = () => {
                     eget porttitor mauris aliquet. Nullam
                   </p>
                 </div>
-                <div class="button-group wow animate__animated animate__slideInLeft animate__delay-2s">
-                  <a href="#" class="lnk-btn">
+                <div className="button-group wow animate__animated animate__slideInLeft animate__delay-2s">
+                  <a href="#" className="lnk-btn">
                     Learn more{" "}
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <i className="fa fa-angle-right" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="img_box ">
+            <div className="col-lg-6">
+              <div className="img_box ">
                 <figure>
                   <img
                     src={about_img}
-                    class="img-fluid wow animate__animated animate__fadeInLeft"
+                    className="img-fluid wow animate__animated animate__fadeInLeft"
                   />
                 </figure>
               </div>
@@ -141,27 +189,27 @@ const Home = () => {
       </section>
       {/* <!-- About Us Sec End Here --> */}
       {/* <!-- Services Sec Start Here --> */}
-      <section class="services_sec">
-        <div class="container-fluid p-0">
-          <div class="row">
+      <section className="services_sec">
+        <div className="container-fluid p-0">
+          <div className="row">
             {services.map((data, index) => {
               return (
                 <div
                   key={index}
-                  class={index % 2 == 0 ? "col-md-6 m-0 p-0" : "col-md-6"}
+                  className={index % 2 == 0 ? "col-md-6 m-0 p-0" : "col-md-6"}
                 >
-                  <div class="serive_box">
-                    <div class="service-img wow animate__animated animate__zoomIn">
+                  <div className="serive_box">
+                    <div className="service-img wow animate__animated animate__zoomIn">
                       <figure>
-                        <img src={data.img} class="img-fluid" />
+                        <img src={data.img} className="img-fluid" />
                       </figure>
                     </div>
-                    <div class="service-name wow animate__animated animate__fadeInUp">
+                    <div className="service-name wow animate__animated animate__fadeInUp">
                       <h3>{data.name}</h3>
                       <p>{data.des}</p>
-                      <a href="#" class="lnk-btn">
+                      <a href="#" className="lnk-btn">
                         Learn more{" "}
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <i className="fa fa-angle-right" aria-hidden="true"></i>
                       </a>
                     </div>
                   </div>
@@ -173,31 +221,31 @@ const Home = () => {
       </section>
       {/* <!-- Services Sec End Here --> */}
       {/* <!-- Testimonials Sec Start Here --> */}
-      <section class="testimonials_sec">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 p-0">
-              <div class="testi-image wow animate__animated animate__fadeInLeft">
+      <section className="testimonials_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6 p-0">
+              <div className="testi-image wow animate__animated animate__fadeInLeft">
                 <figure>
                   <img
                     src={testimonails_img}
-                    class="img-fluid wow animate__animated animate__fadeInLeft"
+                    className="img-fluid wow animate__animated animate__fadeInLeft"
                   />
                 </figure>
               </div>
             </div>
-            <div class="col-lg-6 p-0">
-              <div class="client_reviews">
-                <div class="heading">
-                  <h3 class="ml15">
-                    <span class="word">Client</span>
-                    <span class="word">Reviews</span>
+            <div className="col-lg-6 p-0">
+              <div className="client_reviews">
+                <div className="heading">
+                  <h3 className="ml15">
+                    <span className="word">Client</span>
+                    <span className="word">Reviews</span>
                   </h3>
                 </div>
                 <Slider {...settings}>
-                  <div class="testimonials_slider">
-                    <div class="testimonial_box">
-                      <div class="title">
+                  <div className="testimonials_slider">
+                    <div className="testimonial_box">
+                      <div className="title">
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
@@ -205,31 +253,31 @@ const Home = () => {
                         Sherwood. “Sherwood was with the team through the entire
                         process”
                       </p>
-                      <div class="bottom-bar">
-                        <ul class="rating">
+                      <div className="bottom-bar">
+                        <ul className="rating">
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                         </ul>
-                        <h5 class="client-name">Lauren.p stevens</h5>
+                        <h5 className="client-name">Lauren.p stevens</h5>
                       </div>
                     </div>
                   </div>
-                  <div class="testimonials_slider">
-                    <div class="testimonial_box">
-                      <div class="title">
+                  <div className="testimonials_slider">
+                    <div className="testimonial_box">
+                      <div className="title">
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
@@ -237,31 +285,31 @@ const Home = () => {
                         Sherwood. “Sherwood was with the team through the entire
                         process”
                       </p>
-                      <div class="bottom-bar">
-                        <ul class="rating">
+                      <div className="bottom-bar">
+                        <ul className="rating">
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                         </ul>
-                        <h5 class="client-name">Lauren.p stevens</h5>
+                        <h5 className="client-name">Lauren.p stevens</h5>
                       </div>
                     </div>
                   </div>
-                  <div class="testimonials_slider">
-                    <div class="testimonial_box">
-                      <div class="title">
+                  <div className="testimonials_slider">
+                    <div className="testimonial_box">
+                      <div className="title">
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
@@ -269,25 +317,25 @@ const Home = () => {
                         Sherwood. “Sherwood was with the team through the entire
                         process”
                       </p>
-                      <div class="bottom-bar">
-                        <ul class="rating">
+                      <div className="bottom-bar">
+                        <ul className="rating">
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                           <li>
-                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i className="fa fa-star" aria-hidden="true"></i>
                           </li>
                         </ul>
-                        <h5 class="client-name">Lauren.p stevens</h5>
+                        <h5 className="client-name">Lauren.p stevens</h5>
                       </div>
                     </div>
                   </div>
