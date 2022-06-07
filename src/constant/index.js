@@ -30,6 +30,11 @@ import serv8 from "../assets/img/serv8.png";
 import serv9 from "../assets/img/serv9.png";
 import sericon from "../assets/img/serv-icon.png";
 import serv1img from "../assets/img/ser1-img.png";
+import advisory1 from "../assets/img/Advisory1.png";
+import advisory2 from "../assets/img/Advisory2.png";
+import advisory3 from "../assets/img/Advisory3.png";
+import advisory4 from "../assets/img/Advisory4.png";
+import advisory5 from "../assets/img/Advisory5.png";
 
 export {
   logo,
@@ -64,4 +69,9 @@ export {
   serv9,
   sericon,
   serv1img,
+  advisory1,
+  advisory2,
+  advisory3,
+  advisory4,
+  advisory5,
 };

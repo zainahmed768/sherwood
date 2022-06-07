@@ -1,0 +1,33 @@
+.Advisory-card-wrapper .Advisory-content-wrapper {
+  margin: 12px 0px;
+}
+
+.Advisory-sec .Advisory-card-wrapper {
+  margin: 30px 0px;
+}
+.Advisory-card-wrapper .Advisory-content-wrapper h4 {
+  font-family: "SF Pro Display";
+  font-size: 35px;
+  font-weight: 700;
+  color: #00151f;
+}
+
+.Advisory-card-wrapper .Advisory-content-wrapper p {
+  color: #7f7f7f;
+  font-family: "sf-text-pro";
+  font-size: 16px;
+}
+
+.Advisory-card-wrapper .Advisory-content-wrapper a {
+  color: #0066cc;
+  text-decoration: none;
+  font-family: "sf-text-pro";
+  font-size: 20px;
+}
+.Advisory-sec .Advisory-card-wrapper .blue-divider {
+    background: #0066cc;
+    height: 3px;
+    width: 47px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}

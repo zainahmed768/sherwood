@@ -2,9 +2,49 @@ import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PageHeader from "../../Components/PageHeader";
-import { serv1img } from "../../constant";
+import "../../assets/css/advisory.css";
+import {
+  serv1img,
+  advisory1,
+  advisory2,
+  advisory3,
+  advisory4,
+  advisory5,
+} from "../../constant";
 
 const BusinessAdvisoryServices = () => {
+  const Advisory_services = [
+    {
+      id: 1,
+      name: "Our Experience",
+      img: advisory1,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 2,
+      name: "Advisory Services",
+      img: advisory2,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 3,
+      name: "Interim Management",
+      img: advisory3,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 4,
+      name: "Family Held Business",
+      img: advisory4,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 5,
+      name: "Special Circumtances",
+      img: advisory5,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+  ];
   return (
     <>
       <Header />
@@ -21,7 +61,7 @@ const BusinessAdvisoryServices = () => {
             <div className="col-lg-6">
               <div className="content-wrapper">
                 <h3>
-                Business Advisory <span>Services</span>
+                  Business Advisory <span>Services</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>
@@ -55,6 +95,42 @@ const BusinessAdvisoryServices = () => {
         </div>
       </section>
       {/* winning sec ends here */}
+      {/* Advisory sec starts here */}
+      <section className="Advisory-sec">
+        <div className="container">
+          <div className="row">
+            {Advisory_services.map((data, index) => {
+              return (
+                <div className="col-lg-4">
+                  <div
+                    className={"Advisory-card-wrapper Advisory-card-" + data.id}
+                  >
+                    <div className="Advisory-img-wrapper">
+                      <figure>
+                        <img src={data.img} className="img-fluid" />
+                      </figure>
+                    </div>
+                    <div className="Advisory-content-wrapper">
+                      <h4>
+                        {data.name.split(" ")[0]}{" "}
+                        <span>
+                          {data.name.split(" ").slice(1).join(' ')}
+                        </span>
+                      </h4>
+                      <div className="blue-divider"></div>
+                      <p>{data.des}</p>
+                      <a className="#">
+                        Learn more <i className="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      {/* Advisory sec ends here */}
       <Footer />
     </>
   );
