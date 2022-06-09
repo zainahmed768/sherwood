@@ -19,3 +19,9 @@
   overflow: hidden;
   margin: 30px 0px;
 }
+@media (max-width: 1366px) {
+  .services-card-wrapper .services-content-wrapper h4 {
+    font-size: 11px;
+    
+}
+}

@@ -1,6 +1,7 @@
 import React from "react";
 // header logo starts here
 import { logo } from "../constant";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-lg-2 col-4">
               <div className="logoDv">
-                <a href="index.php">
+                <a href="">
                   <figure>
                     <img src={logo} className="img-fluid" />
                   </figure>
@@ -22,9 +23,10 @@ const Header = () => {
               <div className="navbar_menus">
                 <ul className="menus">
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                  <Link to="/Home"> Home</Link>
+                    {/* <a href="" className="menu-link">
                       Home
-                    </a>
+                    </a> */}
                   </li>
                   <li className="menu-items">
                     <div className="dropdown">
@@ -43,19 +45,22 @@ const Header = () => {
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Presidents"> Co Presidents | Founders</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Co Presidents | Founders
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/SherwoodProfessionals">Professionals</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Professionals
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/SherwoodBoardMembers">Board Members</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Board Members
-                          </a>
+                          </a> */}
                         </li>
                       </ul>
                     </div>
@@ -77,24 +82,28 @@ const Header = () => {
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/BusinessAdvisoryServices">Business Advisory Services</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Business Advisory Services
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Corporate">Corporate Restructuring</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Corporate Restructuring
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Liquid">Asset Liquidation and Monetization</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Asset Liquidation and Monetization
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Financial">Financial Management</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Financial Management
-                          </a>
+                          </a> */}
                         </li>
                         <li className="inner-dropdown">
                           <a className="dropdown-item" href="#">
@@ -105,33 +114,41 @@ const Header = () => {
                             ></i>
                           </a>
                           <ul className="inner-dropdown-menu">
+                         
                             <li className="dropdown-item">
-                              <a href="#">Agency Ip Overview</a>
+                            <Link to="/Agencyip">Agency Ip Overview</Link>
+                              {/* <a href="#">Agency Ip Overview</a> */}
                             </li>
                             <li className="dropdown-item">
-                              <a href="#">Sales & Licensing</a>
+                            <Link to="/Sales">Sales & Licensing</Link>
+                              {/* <a href="#">Sales & Licensing</a> */}
                             </li>
                             <li className="dropdown-item">
-                              <a href="#">Strategy</a>
+                            <Link to="/Strategy">Strategy</Link>
+                              {/* <a href="#">Strategy</a> */}
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Lta">Liquidating Trust Agents | Distribution Agents</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Liquidating Trust Agents | Distribution Agents
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Debt">Debt Restructuring & Management</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Debt Restructuring & Management
-                          </a>
+                          </a> */}
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                        <Link to="/Wellness">Wellness Reviews</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Wellness Reviews
-                          </a>
+                          </a> */}
                         </li>
                         <li>
+                          
                           <a className="dropdown-item" href="#">
                             Cash Management
                           </a>
@@ -140,27 +157,28 @@ const Header = () => {
                     </div>
                   </li>
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                  <Link to="/Affilations">Affiliations & Memberships</Link>
+                    {/* <a href="" className="menu-link">
                       Affiliations & Memberships
-                    </a>
+                    </a> */}
                   </li>
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                    <a href="" className="menu-link">
                       News
                     </a>
                   </li>
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                    <a href="" className="menu-link">
                       Blogs
                     </a>
                   </li>
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                    <a href="" className="menu-link">
                       Contact Us
                     </a>
                   </li>
                   <li className="menu-items">
-                    <a href="index.php" className="menu-link">
+                    <a href="" className="menu-link">
                       Careers
                     </a>
                   </li>

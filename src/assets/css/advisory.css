@@ -7,7 +7,7 @@
 }
 .Advisory-card-wrapper .Advisory-content-wrapper h4 {
   font-family: "SF Pro Display";
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   color: #00151f;
 }
@@ -30,4 +30,21 @@
     width: 47px;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+
+section.Advisory-sec {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1366px) {
+  .Advisory-card-wrapper .Advisory-content-wrapper h4 {
+    font-size: 25px;
+}
+.Advisory-card-wrapper .Advisory-content-wrapper p {
+  font-size: 12px;
+}
+.pageheader h4 {
+  font-size: 28px;
+  
+}
 }

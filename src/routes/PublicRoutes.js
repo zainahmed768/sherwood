@@ -18,12 +18,22 @@ import Liquid from "../pages/Services/Liquid";
 import Benefit from "../pages/Services/Benefit";
 import Manageliquid from "../pages/Services/Manageliquid";
 import Fedral from "../pages/Services/Fedral";
+import Debtor from "../pages/Services/Debtor";
+import Monitization from "../pages/Services/Monitization";
+import Affilations from "../pages/Services/Affilations";
+import Corporate from "../pages/Services/Corporate";
+import Agency from "../pages/Services/Agencyip";
+import Strategy from "../pages/Services/Strategy";
+import Debt from "../pages/Services/Debt";
+import Wellness from "../pages/Services/Wellness";
+import Lta from "../pages/Services/Lta";
+import Financial from "../pages/Services/Financial";
 
 const PublicRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="Presidents" element={<Presidents />} />
         <Route
@@ -44,6 +54,22 @@ const PublicRoutes = () => {
         <Route path="Benefit" element={<Benefit />} />
         <Route path="Manageliquid" element={<Manageliquid />} />
         <Route path="Fedral" element={<Fedral />} />
+        <Route path="Debtor" element={<Debtor />} />
+        <Route path="Monitization" element={<Monitization />} />
+        <Route path="Affilations" element={<Affilations />} />
+        <Route path="Corporate" element={<Corporate />} />
+        <Route path="Agencyip" element={<Agency />} />
+        <Route path="Strategy" element={<Strategy />} />
+        <Route path="Debt" element={<Debt />} />
+        <Route path="wellness" element={<Wellness />} />
+        <Route path="Lta" element={<Lta />} />
+        <Route path="Financial" element={<Financial />} />
+      
+     
+        
+
+
+
 
         
       </Routes>
