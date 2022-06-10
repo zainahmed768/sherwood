@@ -1,0 +1,21 @@
+.blog-article-all img {
+    width: 100%;
+}
+
+section.blog-article-sec {
+    padding: 70px 0px;
+}
+
+.blog-article-para p {
+    font-size: 14px;
+    color: #00000085;
+    font-family: 'sf-text-pro';
+    text-align: justify;
+}
+
+.blog-article-para h2 {
+    font-size: 40px;
+    color: #000000;
+    font-family: 'SF Pro Display';
+    padding-top: 20px;
+}

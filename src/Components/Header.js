@@ -12,11 +12,12 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-lg-2 col-4">
               <div className="logoDv">
-                <a href="">
+                <Link to="/Home">
                   <figure>
+
                     <img src={logo} className="img-fluid" />
                   </figure>
-                </a>
+                  </Link>
               </div>
             </div>
             <div className="col-lg-7 col-1">
@@ -163,24 +164,28 @@ const Header = () => {
                     </a> */}
                   </li>
                   <li className="menu-items">
-                    <a href="" className="menu-link">
+                  <Link to="/News"> News</Link>
+                    {/* <a href="" className="menu-link">
                       News
-                    </a>
+                    </a> */}
                   </li>
                   <li className="menu-items">
-                    <a href="" className="menu-link">
+                  <Link to="/Blogs"> Blogs</Link>
+                    {/* <a href="" className="menu-link">
                       Blogs
-                    </a>
+                    </a> */}
                   </li>
                   <li className="menu-items">
-                    <a href="" className="menu-link">
+                  <Link to="/Contactus">Contact Us</Link>
+                    {/* <a href="" className="menu-link">
                       Contact Us
-                    </a>
+                    </a> */}
                   </li>
                   <li className="menu-items">
-                    <a href="" className="menu-link">
+                  <Link to="/Career">Careers</Link>
+                    {/* <a href="" className="menu-link">
                       Careers
-                    </a>
+                    </a> */}
                   </li>
                 </ul>
               </div>

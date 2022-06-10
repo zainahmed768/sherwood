@@ -18,30 +18,35 @@ const Liquid = () => {
       name: "Our Experience",
       img: l1,
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+      
     },
     {
       id: 2,
       name: "Advisory Services",
       img: l2,
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+      
     },
     {
       id: 3,
       name: "Interim Management",
       img: l3,
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+      
     },
     {
       id: 4,
       name: "Family Held Business",
       img: l4,
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+      
     },
     {
       id: 5,
       name: "Special Circumtances",
       img: l5,
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+     
     },
   ];
 
@@ -146,6 +151,7 @@ const Liquid = () => {
                       </h4>
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
+                     
                       <a className="#">
                         Learn more <i className="fa fa-angle-right"></i>
                       </a>

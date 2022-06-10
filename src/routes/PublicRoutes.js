@@ -28,6 +28,18 @@ import Debt from "../pages/Services/Debt";
 import Wellness from "../pages/Services/Wellness";
 import Lta from "../pages/Services/Lta";
 import Financial from "../pages/Services/Financial";
+import Wind from "../pages/Services/Winddown";
+import Debtcollection from "../pages/Services/Debtcollection";
+import Finalreturntax from "../pages/Services/Finaltaxreturn";
+import Funds from "../pages/Services/Funds";
+import News from "../pages/News/News";
+import Blog from "../pages/Blogs/Blog";
+import Sheerwoodpartners from "../pages/Services/Sherwoodpartners";
+import Sherwoodfinance from "../pages/Services/Sherwoodfinance";
+import Contact from "../pages/Contactus.js/Contactus";
+import Firsttime from "../pages/Services/Firsttime";
+import Career from "../pages/Career/Career";
+import Blogarticle from "../pages/Blogs/Blogarticle";
 
 const PublicRoutes = () => {
   return (
@@ -64,6 +76,22 @@ const PublicRoutes = () => {
         <Route path="wellness" element={<Wellness />} />
         <Route path="Lta" element={<Lta />} />
         <Route path="Financial" element={<Financial />} />
+        <Route path="winddown" element={<Wind />} />
+        <Route path="Debtcollection" element={<Debtcollection />} />
+        <Route path="Finalreturntax" element={<Finalreturntax />} />
+        <Route path="Funds" element={<Funds />} />
+        <Route path="News" element={<News />} />
+        <Route path="Blogs" element={<Blog />} />
+        <Route path="Sherwoodpartners" element={<Sheerwoodpartners />} />
+        <Route path="Sherwoodfinance" element={<Sherwoodfinance />} />
+        <Route path="Contactus" element={<Contact />} />
+        <Route path="Firsttime" element={<Firsttime />} />
+        <Route path="Career" element={<Career />} />
+        <Route path="Blogarticle" element={<Blogarticle />} />
+
+        
+
+        
       
      
         

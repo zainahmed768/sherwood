@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { footer_logo, linkedin } from "../constant";
 
 const Footer = () => {
@@ -57,24 +58,30 @@ const Footer = () => {
                 </div>
                 <ul className="footer-link">
                   <li>
-                    <a href="#">SHERWOOD PARTNERS</a>
+                  <Link to="/Sherwoodpartners">SHERWOOD PARTNERS</Link>
+                    {/* <a href="#">SHERWOOD PARTNERS</a> */}
                   </li>
                   <li>
-                    <a href="#">SHERWOOD FINANCE</a>
+                  <Link to="/Sherwoodfinance">SHERWOOD FINANCE</Link>
+                    {/* <a href="#">SHERWOOD FINANCE</a> */}
                   </li>
                   <li>
-                    <a href="#">WELLNESS REVIEW</a>
+                  <Link to="/Wellness">Wellness Reviews</Link>
+                    {/* <a href="#">WELLNESS REVIEW</a> */}
                   </li>
                   <li>
-                    <a href="#">AGENCY IP</a>
+                  <Link to="/Agencyip">AGENCY IP</Link>
+                    {/* <a href="#">AGENCY IP</a> */}
                   </li>
                   <li>
-                    <a href="#">
+                  <Link to="/Lta">lIQUIDATION TRUST AGENTS | DISTRIBUTION AGENTS</Link>
+                    {/* <a href="#">
                       lIQUIDATION TRUST AGENTS | DISTRIBUTION AGENTS
-                    </a>
+                    </a> */}
                   </li>
                   <li>
-                    <a href="#">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME </a>
+                  <Link to="/Firsttime">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME</Link>
+                    {/* <a href="#">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME </a> */}
                   </li>
                 </ul>
               </div>

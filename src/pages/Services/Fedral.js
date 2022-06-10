@@ -21,7 +21,7 @@ const Fedral =()=>{
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
                 <h3>
-                State and<span>Federal Recievers</span>
+                State and <span> Federal Recievers</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>

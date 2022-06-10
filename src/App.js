@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/assets/css/style.css";
 // style.css ends here
 import PublicRoutes from "./routes/PublicRoutes";
+import 'bootstrap/dist/js/bootstrap';
 import "@popperjs/core";
 function App() {
   return (
