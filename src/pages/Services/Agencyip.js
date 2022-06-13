@@ -12,6 +12,7 @@ import ap5 from "../../assets/img/ap5.png";
 
 
 import "../../assets/css/advisory.css";
+import { Link } from "react-router-dom";
 
 
 const Agency = () => {
@@ -54,7 +55,7 @@ const Agency = () => {
         <>
         <Header />
 
-      <PageHeader pagename="Agency IP"
+      <PageHeader pagename="agencyIP"
         pagelinkname="Services"/>
 
           {/* winning sec starts here */}
@@ -64,7 +65,7 @@ const Agency = () => {
             <div className="col-lg-6">
               <div className="content-wrapper">
                 <h3>
-                Agency IP <br /> <span>Overview</span>
+                agencyIP <br /> <span>Overview</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>
@@ -74,6 +75,11 @@ const Agency = () => {
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus.  Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus molestie urna ut nunc congue sollicitudin. Integer vulputate ligula at turpis tempus consectetur. Nullam non ultrices ipsum. Ut molesti. 
                 </p>
+
+                <div className="Submitip">
+                <Link to ="/Submityourip">Submit Your Ip For Review</Link>
+
+                </div>
               </div>
             </div>
             <div className="col-lg-6 align-self-center">

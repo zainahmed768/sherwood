@@ -40,6 +40,14 @@ import Contact from "../pages/Contactus.js/Contactus";
 import Firsttime from "../pages/Services/Firsttime";
 import Career from "../pages/Career/Career";
 import Blogarticle from "../pages/Blogs/Blogarticle";
+import Careerdetail from "../pages/Career/Careerdetail";
+import Applicationform from "../pages/Career/Applicationform";
+import Newsdetail from "../pages/News/Newsdetail";
+import Helpingowners from "../pages/Services/Helpingowners";
+import Submityourip from "../pages/Services/Submityourip";
+import Cash from "../pages/Services/Cash";
+import Faq from "../pages/Faq/Faq";
+import Login from "../pages/Login/Login";
 
 const PublicRoutes = () => {
   return (
@@ -88,6 +96,15 @@ const PublicRoutes = () => {
         <Route path="Firsttime" element={<Firsttime />} />
         <Route path="Career" element={<Career />} />
         <Route path="Blogarticle" element={<Blogarticle />} />
+        <Route path="Careerdetail" element={<Careerdetail />} />
+        <Route path="Applicationform" element={<Applicationform />} />
+        <Route path="Newsdetail" element={<Newsdetail />} />
+        <Route path="Helpingowners" element={<Helpingowners />} />
+        <Route path="Submityourip" element={<Submityourip />} />
+        <Route path="cash" element={<Cash />} />
+        <Route path="Faq" element={<Faq />} />
+        <Route path="Login" element={<Login />} />
+
 
         
 

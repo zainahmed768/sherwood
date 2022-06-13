@@ -93,10 +93,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                          <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                           <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -127,10 +127,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -161,10 +161,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -195,10 +195,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -229,10 +229,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -263,10 +263,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -304,10 +304,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -338,10 +338,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -372,10 +372,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -406,10 +406,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -440,10 +440,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>
@@ -474,10 +474,10 @@ const Career = () => {
 
                       <div className="col-md-4">
                         <div className="view-details">
-                          <Link to="/">View Details</Link>
+                        <Link to="/careerdetail">View Details</Link>
                           <div className="Apply-now-btn">
                             <p>5 September 2021</p>
-                            <button>Apply Now</button>
+                            <Link to="/Applicationform"> <button>Apply Now</button></Link>
                           </div>
                         </div>
                       </div>

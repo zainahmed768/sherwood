@@ -3,74 +3,77 @@ import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
 import blogimg from "../../assets/img/blogimg.png";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
-    const Advisory_services = [
-      {
-        id: 1,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-      {
-        id: 2,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-      {
-        id: 3,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-      {
-        id: 4,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-      {
-        id: 5,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-  
-      {
-        id: 6,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-  
-      {
-        id: 7,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-      {
-        id: 8,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-  
-      {
-        id: 9,
-        name: "Blogs + Articles + Great Information",
-        img: blogimg,
-        des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
-      },
-    ];
+  const Advisory_services = [
+    {
+      id: 1,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 2,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 3,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 4,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 5,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
 
+    {
+      id: 6,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
 
-    return(
-        <>
-        <Header />
-        <PageHeader pagename="Blogs + Articles + Great Information" pagelinkname=" Blogs + Articles + Great Information" />
-         {/* Advisory sec starts here */}
+    {
+      id: 7,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+    {
+      id: 8,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+
+    {
+      id: 9,
+      name: "Blogs + Articles + Great Information",
+      img: blogimg,
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
+    },
+  ];
+
+  return (
+    <>
+      <Header />
+      <PageHeader
+        pagename="Blogs + Articles + Great Information"
+        pagelinkname=" Blogs + Articles + Great Information"
+      />
+      {/* Advisory sec starts here */}
       <section className="Advisory-sec News-sec">
         <div className="container">
           <div className="row">
@@ -93,15 +96,14 @@ const Blog = () => {
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
 
-                      <a className="#">
-                        Learn more <i className="fa fa-angle-right"></i>
-                      </a>
+                      <Link to="/Blogarticle">
+                          Learn more <i className="fa fa-angle-right"></i>
+                      </Link>
                       <div className="news-date-day">
-                      <h4>02</h4>
-                      <h5>Mar</h5>
+                        <h4>02</h4>
+                        <h5>Mar</h5>
+                      </div>
                     </div>
-                    </div>
-                   
                   </div>
                 </div>
               );
@@ -136,9 +138,9 @@ const Blog = () => {
         </div>
       </section>
       {/* Advisory sec ends here */}
-        <Footer />
-        </>
-    )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Blog;

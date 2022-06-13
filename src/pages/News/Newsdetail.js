@@ -2,15 +2,14 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
-import blogarticleimg from "../../assets/img/blogarticleimg.png";
-import "../../assets/css/blogarticle.css";
-
-const Blogarticle = () => {
-  return (
-    <>
-      <Header />
-      <PageHeader pagename="Blogs & Articles" pagelinkname="Services" />
-
+import newsdetailimg from "../../assets/img/newsdetailimg.png";
+ 
+const Newsdetail =()=>{
+    return(
+        <>
+        <Header />
+         <PageHeader pagename="In The News" pagelinkname="The News"/>
+         
       {/* Blogarticle section  */}
 
       <section className="blog-article-sec">
@@ -18,9 +17,9 @@ const Blogarticle = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="blog-article-all">
-                <img src={blogarticleimg}></img>
+                <img src={newsdetailimg}></img>
                 <div className="blog-article-para">
-                  <h2>Our Success Is Your Success</h2>
+                  <h2>In The News</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Mauris commodo quis tellus ac tristique. Nunc augue nibh,
@@ -96,9 +95,9 @@ const Blogarticle = () => {
         </div>
       </section>
       {/* End of BlogArticle section  */}
-      <Footer />
-    </>
-  );
-};
+        <Footer />
+        </>
+    )
+}
 
-export default Blogarticle;
+export default Newsdetail;

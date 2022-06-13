@@ -149,10 +149,10 @@ const Header = () => {
                           </a> */}
                         </li>
                         <li>
-                          
-                          <a className="dropdown-item" href="#">
+                          <Link to="/cash">Cash Management</Link>
+                          {/* <a className="dropdown-item" href="#">
                             Cash Management
-                          </a>
+                          </a> */}
                         </li>
                       </ul>
                     </div>

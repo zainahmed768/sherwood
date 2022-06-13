@@ -19,7 +19,7 @@ const Wellness = () => {
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
                 <h3>
-                  Debt Reduction <span>and Renegotiations</span>
+                  Debt Renegotiations <span>and Restructuring</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>

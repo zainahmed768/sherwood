@@ -106,3 +106,7 @@ section.winning-sec.first-time-sec {
 section.winning-sec.first-time-sec .content-wrapper {
     position: relative;
 }
+
+.contact-head h2 span {
+    font-weight: 300;
+}

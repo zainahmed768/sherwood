@@ -17,7 +17,7 @@
 .winning-sec p {
   color: #7f7f7f;
   font-family: "sf-text-pro";
-  font-size: 16px;
+  font-size: 14px;
 }
 /* winnign-sec css ends here */
 /* Experience-sec  css starts here */
@@ -36,7 +36,7 @@
 .Experience-sec h3 {
   color: #fff;
   font-family: "SF Pro Display";
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -200,6 +200,8 @@
   background-size: 100% 100%;
   background-color: transparent !important;
 }
+
+
 /* End of Benefit section  */
 
 /* Begin of Affilation section  */
@@ -211,6 +213,16 @@
 /* Begin of Agency section  */
 .Agencyip-sec .content-wrapper h3 {
   font-size: 36px;
+}
+
+.Submitip a {
+  font-size: 10px;
+  color: #ffffff;
+  font-family: 'sf-text-pro';
+  background-color: #090909;
+  padding: 14px 27px;
+  text-decoration: unset;
+  line-height: 70px;
 }
 /* End of Agency section  */
 
@@ -301,7 +313,7 @@
 
 /* Extra css  */
 .Monetization h3 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 /* Extra css  */
@@ -319,5 +331,38 @@
 }
 .Experience-sec p {
   font-size: 11px;
+}
+.winning-sec h3 {
+  font-size: 30px;
+}
+.Experience-sec .content-wrapper {
+  padding: 60px 33px 94px 33px;
+}
+.Experience-sec img.experience-img {
+  height: 380px;
+}
+.Business-sec h3 {
+  font-size: 24px;
+}
+.Business-sec p {
+ 
+  font-size: 12px;
+}
+.team-sec h3 {
+  font-size: 36px;
+}
+.team-sec p {
+  font-size: 12px;
+}
+.team-sec .team-name-wrapper h5 {
+  font-size: 15px;
+}
+footer .footer-content ul.footer-link li a {
+  font-size: 11px;
+  
+}
+.news-date-day {
+  right: 10px;
+  
 }
 }

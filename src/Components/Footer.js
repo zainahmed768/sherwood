@@ -83,6 +83,9 @@ const Footer = () => {
                   <Link to="/Firsttime">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME</Link>
                     {/* <a href="#">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME </a> */}
                   </li>
+                  <li>
+                    <Link to="/Faq">FAQ</Link>
+                  </li>
                 </ul>
               </div>
             </div>

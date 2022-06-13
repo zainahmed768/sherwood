@@ -4,6 +4,7 @@ import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
 import gallery11 from "../../assets/img/gallery11.png";
 import gallery12 from "../../assets/img/gallery12.png";
+import { Link } from "react-router-dom";
 
 const News = () => {
   const Advisory_services = [
@@ -94,9 +95,9 @@ const News = () => {
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
 
-                      <a className="#">
+                     <Link to="/Newsdetail"> 
                         Learn more <i className="fa fa-angle-right"></i>
-                      </a>
+                      </Link>
                       <div className="news-date-day">
                       <h4>02</h4>
                       <h5>Mar</h5>
