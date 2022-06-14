@@ -149,7 +149,7 @@ const Header = () => {
                           </a> */}
                         </li>
                         <li>
-                          <Link to="/cash">Cash Management</Link>
+                          <Link to="/cash"></Link>
                           {/* <a className="dropdown-item" href="#">
                             Cash Management
                           </a> */}

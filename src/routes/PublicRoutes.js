@@ -64,7 +64,7 @@ const PublicRoutes = () => {
         <Route path="BoardMembers" element={<BoardMembers />} />
         <Route path="Services" element={<Services />} />
         <Route path="BusinessAdvisoryServices" element={<BusinessAdvisoryServices />} />
-        <Route path="ourexperince" element={<Ourexperince />} />
+        <Route path="ourexperince/:Id" element={<Ourexperince />} />
         <Route path="Sales" element={<Sales />} />
         <Route path="Purchase" element={<Purchase />} />
         <Route path="Management" element={<Manage />} />

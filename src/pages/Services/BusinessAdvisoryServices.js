@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import PageHeader from "../../Components/PageHeader";
+import { Link } from "react-router-dom";
 import "../../assets/css/advisory.css";
 import {
   serv1img,
@@ -119,9 +120,9 @@ const BusinessAdvisoryServices = () => {
                       </h4>
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
-                      <a className="#">
+                      <Link to={`/ourexperince/${data?.id}`} className="#">
                         Learn more <i className="fa fa-angle-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

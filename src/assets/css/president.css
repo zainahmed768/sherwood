@@ -3,16 +3,18 @@
   font-family: "Poppins";
   font-weight: 600;
   margin-top: 23px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .manager-sec .manager-card-wrapper h3 {
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 700;
   color: #000;
 }
 .manager-sec .manager-card-wrapper p {
   color: #7f7f7f;
   font-family: "sf-text-pro";
+  text-align: justify;
+  font-size: 13px;
 }
 .manager-sec .manager-card-wrapper {
   margin: 20px 0px;

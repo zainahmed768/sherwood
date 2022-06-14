@@ -40,7 +40,7 @@ const Footer = () => {
                   <img src={footer_logo} className="img-fluid" />
                 </figure>
               </div>
-              <p>
+              <p className="for-font-size">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum has been the industry's standard dummy text
                 .
