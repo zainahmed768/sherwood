@@ -12,7 +12,7 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-lg-2 col-4">
               <div className="logoDv">
-                <Link to="/Home">
+                <Link to="/">
                   <figure>
 
                     <img src={logo} className="img-fluid" />
