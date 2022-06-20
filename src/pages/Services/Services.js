@@ -16,6 +16,7 @@ import {
   serv8,
   serv9,
 } from "../../constant";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services_item = [
@@ -23,47 +24,57 @@ const Services = () => {
       id: 1,
       img: serv1,
       name: "Business Advisory Services",
-      pathname: "/BusinessAdvisoryServices",
+      path: "/BusinessAdvisoryServices",
     },
     {
       id: 2,
       img: serv2,
       name: "Asset Liquidation & Monetization",
+      path: "/BusinessAdvisoryServices",
+
     },
     {
       id: 3,
       img: serv3,
       name: "Financial Management",
+      path: "/BusinessAdvisoryServices",
+
     },
     {
       id: 4,
       img: serv4,
       name: "agency Ip",
+      path: "/BusinessAdvisoryServices",
     },
     {
       id: 5,
-      img: serv5,
+      img: serv4,
       name: "Liquidating Trust Agents | Distribution Agents",
+      path: "/BusinessAdvisoryServices",
     },
     {
-      id: 6,
+      id: 4,
       img: serv6,
       name: "Corporate Restructuring",
+      path: "/BusinessAdvisoryServices",
     },
     {
-      id: 7,
+      id: 4,
       img: serv7,
       name: "Debt Restructuring & Management",
+      path: "/BusinessAdvisoryServices",
     },
     {
       id: 8,
-      img: serv8,
+      img: serv4,
       name: "Wellness Review",
+      path: "/BusinessAdvisoryServices",
     },
     {
       id: 9,
-      img: serv9,
+      img: serv4,
       name: "Cash Management",
+      path: "/BusinessAdvisoryServices",
     },
   ];
   return (
@@ -133,7 +144,7 @@ const Services = () => {
                     </div>
                     <div className="services-content-wrapper">
                       <img src={sericon} className="img-fluid" />
-                      <h4>{data?.name}</h4>
+                      <Link to={data?.path}><h4>{data?.name}</h4></Link>
                     </div>
                   </div>
                 </div>

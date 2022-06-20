@@ -9,6 +9,7 @@ import l3 from "../../assets/img/l3.png";
 import l4 from "../../assets/img/l4.png";
 import l5 from "../../assets/img/l5.png";
 import "../../assets/css/advisory.css";
+import { Link } from "react-router-dom";
 
 
 const Liquid = () => {
@@ -17,6 +18,7 @@ const Liquid = () => {
       id: 1,
       name: "Our Experience",
       img: l1,
+      link:"/fund",
       des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
       
     },
@@ -152,9 +154,9 @@ const Liquid = () => {
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
                      
-                      <a className="#">
+                      <Link to="/">
                         Learn more <i className="fa fa-angle-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

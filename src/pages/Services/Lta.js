@@ -8,6 +8,7 @@ import lt1 from "../../assets/img/lt1.png";
 import lt2 from "../../assets/img/lt2.png";
 import lt3 from "../../assets/img/lt3.png";
 import lt4 from "../../assets/img/lt4.png";
+import { Link } from "react-router-dom";
 
 
 
@@ -17,24 +18,28 @@ const Lta = () => {
         id: 1,
         name: "Wind-Down",
         img: lt1,
+        link:"/winddown",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
       },
       {
         id: 2,
         name: "Debt Collection",
         img: lt2,
+        link:"/Debtcollection",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
       },
       {
         id: 3,
         name: "Final Tax Returns",
         img: lt3,
+        link:"/Finalreturntax",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
       },
       {
         id: 4,
         name: "Distribution Of Funds / Stock",
         img: lt4,
+        link:"/Funds",
         des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate eros mollis volutpat ultricies. Interdum et malesuada fames ac ante ipsum primi",
       },
      
@@ -114,9 +119,9 @@ const Lta = () => {
                       </h4>
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
-                      <a className="#">
+                      <Link to={data?.link}>
                         Learn more <i className="fa fa-angle-right"></i>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
