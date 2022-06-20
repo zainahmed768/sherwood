@@ -386,6 +386,19 @@ header .canvas_btn {
     font-size: 11px;
     padding-right: 8px;
 }
+#headerTop
+  .navbar_menus
+  ul
+  li
+  .dropdown
+  ul.dropdown-menu
+  li.inner-dropdown
+  ul.inner-dropdown-menu {
+    
+    right: -94%;
+   
+    
+}
 }
 @media (max-width: 1350px) {
   #headerTop .navbar_menus ul li {

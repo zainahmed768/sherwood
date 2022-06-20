@@ -19,7 +19,7 @@ const Wellness = () => {
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
                 <h3>
-                  Debt Renegotiations <span>and Restructuring</span>
+                  Debt Renegotiations <span> & Restructuring</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>
@@ -68,7 +68,7 @@ const Wellness = () => {
             <div className="col-lg-6">
               <div className="content-wrapper">
                 <h3>
-                  An Array Of <span> Creative Choices </span>
+                Creative Choices <span> and Solutions, Since 1992 </span>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -116,9 +116,9 @@ const Wellness = () => {
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
                 <h3>
-                  Time Savings
-                  <span>(ROT | Return On Time)</span>
+                ROT | Return on Time
                 </h3>
+                <h3 className="gettingit"><span>"Getting it done right"?</span></h3>
                 <div className="blue-divider"></div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -200,8 +200,8 @@ const Wellness = () => {
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
                 <h3>
-                  Credible And
-                  <span> Objective Approach</span>
+                When You Want It Done Right
+                  <span>| The first time</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>
