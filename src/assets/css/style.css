@@ -1070,4 +1070,7 @@ footer .button-group a.btn-sherwood {
 }
 /* / loading ends here / */
 
+ul.dropdown-menu li:hover {
+  background-color: #e4e8ed96;
+}
 
