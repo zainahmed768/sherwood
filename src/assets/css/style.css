@@ -399,6 +399,13 @@ header .canvas_btn {
    
     
 }
+.Monetization h3 {
+  font-size: 28px;
+}
+
+h3.gettingit {
+  font-size: 16px !important;
+}
 }
 @media (max-width: 1350px) {
   #headerTop .navbar_menus ul li {
