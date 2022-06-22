@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery"
 // style.css starts here
 import "../src/assets/css/style.css";
+import WOW from "wowjs"
 // style.css ends here
 import PublicRoutes from "./routes/PublicRoutes";
 import "bootstrap/dist/js/bootstrap";
@@ -21,9 +22,17 @@ function App() {
     });
     // Mobile Nav
   }, []);
+  
+
+  new WOW.WOW({
+    live: false,
+  }).init();
+
 
   return (
+    
     <>
+    
       <PublicRoutes />
     </>
   );

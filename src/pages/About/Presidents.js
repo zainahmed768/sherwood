@@ -37,7 +37,7 @@ const Presidents = () => {
       <section className="winning-sec">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-md-6">
               <div className="content-wrapper">
                 <h3>
                   Sherwood Co-Presidents <span>& Founders</span>
@@ -62,7 +62,7 @@ const Presidents = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-6 align-self-center">
+            <div className="col-md-6 align-self-center">
               <div className="img-wrapper">
                 <figure>
                   <img src={winning} className="img-fluid" />
@@ -83,7 +83,7 @@ const Presidents = () => {
                   <div className="manager-card-wrapper">
                     <div className="manager-img-wrapper">
                       <figure>
-                        <img src={data?.img} />
+                        <img className="img-fluid" src={data?.img} />
                       </figure>
                     </div>
                     <div className="manager-content-wrapper">

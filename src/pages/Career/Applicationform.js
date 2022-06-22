@@ -1,14 +1,15 @@
 import React from "react";
+import DragDrop from "../../Components/Drag";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
 
-const Applicationform =()=>{
-    return (
-        <>
-        <Header />
-       <PageHeader pagename="Careers" pagelinkname="Careers"/>
-       {/* Contact section  */}
+const Applicationform = () => {
+  return (
+    <>
+      <Header />
+      <PageHeader pagename="Careers" pagelinkname="Careers" />
+      {/* Contact section  */}
       <section className="Contact-sec">
         <div className="container">
           <div className="row">
@@ -16,7 +17,7 @@ const Applicationform =()=>{
               <div className="contact-all">
                 <div className="contact-head">
                   <h2>
-                  Application<span> Form</span>
+                    Application<span> Form</span>
                   </h2>
                   <div className="blue-divider"></div>
 
@@ -95,7 +96,9 @@ const Applicationform =()=>{
 
                     <div className="col-md-6">
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Select Job Category</label>
+                        <label for="exampleInputEmail1">
+                          Select Job Category
+                        </label>
                         <input
                           type="text"
                           class="form-control"
@@ -120,7 +123,7 @@ const Applicationform =()=>{
                         />
                       </div>
                     </div> */}
-{/* 
+                    {/* 
                     <div className="col-md-6">
                       <div class="form-group">
                         <label for="exampleInputEmail1">
@@ -149,6 +152,11 @@ const Applicationform =()=>{
                         ></textarea>
                       </div>
                     </div>
+
+                    <div className="col-md-12">
+                      
+                      <DragDrop />
+                    </div>
                     <div className="submitbtn">
                       <button>submit</button>
                     </div>
@@ -160,9 +168,9 @@ const Applicationform =()=>{
         </div>
       </section>
       {/* End of Contact section  */}
-        <Footer />
-        </>
-    )
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Applicationform;

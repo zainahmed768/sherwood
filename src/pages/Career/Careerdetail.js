@@ -5,6 +5,7 @@ import PageHeader from "../../Components/PageHeader";
 import clock from "../../assets/img/clock.png";
 import dollar from "../../assets/img/dollar.png";
 import "../../assets/css/careerdetail.css";
+import { Link } from "react-router-dom";
 
 const Careerdetail = () => {
   return (
@@ -33,7 +34,7 @@ const Careerdetail = () => {
                   </div>
                 </div>
                 <div className="apply-btn">
-                  <button>Apply Now</button>
+                 <Link to="/Applicationform"> <button>Apply Now</button></Link>
                 </div>
               </div>
               <div className="career-detail-para">

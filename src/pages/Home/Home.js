@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Slider from "react-slick";
+
 import anime from "animejs/lib/anime.es.js";
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -111,6 +112,8 @@ const Home = () => {
         delay: 800,
       });
   }, []);
+
+
   return (
     <>
       <Header />

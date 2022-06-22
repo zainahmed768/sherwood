@@ -1074,3 +1074,15 @@ ul.dropdown-menu li:hover {
   background-color: #e4e8ed96;
 }
 
+
+.drag-drop label.sc-bczRLJ.kiHXWb {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 40px;
+  background-color: #f3f3f3;
+  border: 1px dashed #C3CAD9;
+}
+
+label.drag-drop-label {
+  padding-top: 30px;
+}
