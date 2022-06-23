@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { footer_logo, linkedin } from "../constant";
 
@@ -58,29 +58,33 @@ const Footer = () => {
                 </div>
                 <ul className="footer-link">
                   <li>
-                  <Link to="/Sherwoodpartners">SHERWOOD PARTNERS</Link>
+                    <Link to="/Sherwoodpartners">SHERWOOD PARTNERS</Link>
                     {/* <a href="#">SHERWOOD PARTNERS</a> */}
                   </li>
                   <li>
-                  <Link to="/Sherwoodfinance">SHERWOOD FINANCE</Link>
+                    <Link to="/Sherwoodfinance">SHERWOOD FINANCE</Link>
                     {/* <a href="#">SHERWOOD FINANCE</a> */}
                   </li>
                   <li>
-                  <Link to="/Wellness">Wellness Reviews</Link>
+                    <Link to="/Wellness">Wellness Reviews</Link>
                     {/* <a href="#">WELLNESS REVIEW</a> */}
                   </li>
                   <li>
-                  <Link to="/Agencyip">AGENCY IP</Link>
+                    <Link to="/Agencyip">AGENCY IP</Link>
                     {/* <a href="#">AGENCY IP</a> */}
                   </li>
                   <li>
-                  <Link to="/Lta">lIQUIDATION TRUST AGENTS | DISTRIBUTION AGENTS</Link>
+                    <Link to="/Lta">
+                      lIQUIDATION TRUST AGENTS | DISTRIBUTION AGENTS
+                    </Link>
                     {/* <a href="#">
                       lIQUIDATION TRUST AGENTS | DISTRIBUTION AGENTS
                     </a> */}
                   </li>
                   <li>
-                  <Link to="/Firsttime">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME</Link>
+                    <Link to="/Firsttime">
+                      WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME
+                    </Link>
                     {/* <a href="#">WHEN YOU WANT IT DONE RIGHT, THE FIRST TIME </a> */}
                   </li>
                   <li>

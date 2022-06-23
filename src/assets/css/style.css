@@ -1086,3 +1086,12 @@ ul.dropdown-menu li:hover {
 label.drag-drop-label {
   padding-top: 30px;
 }
+
+.for-loader  {
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 82px;
+    
+
+}

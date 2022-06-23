@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 // header logo starts here
 import { logo } from "../constant";
 import { Link } from "react-router-dom";
+import $ from "jquery";
+import gsap from "gsap";
+// import { TimelineLite } from "gsap";
 
 const Header = () => {
+  useEffect(() => {
+    var tl = gsap.timeline();
+    // Pre Loader Js
+    tl = gsap.timeline({
+      defaults: {
+        duration: 1,
+        ease: "expo.inOut",
+      },
+    });
+
+    tl.to(".slide-1", { width: 0 }).to("#introduction", { height: 0 });
+    // Pre Loader Js
+  }, []);
   return (
     <>
+      <div id="introduction">
+        <div className="slide-1 slide"></div>
+        <div className="slide-2 slide"></div>
+        <div className="image-container">
+          <h1 className="for-loader">Sherwood</h1>
+        </div>
+      </div>
       {/* // <!-- Header Start Here --> */}
       <header id="headerTop">
         <div className="container">
@@ -14,17 +37,16 @@ const Header = () => {
               <div className="logoDv">
                 <Link to="/">
                   <figure>
-
                     <img src={logo} className="img-fluid" />
                   </figure>
-                  </Link>
+                </Link>
               </div>
             </div>
             <div className="col-lg-7 col-1">
               <div className="navbar_menus">
                 <ul className="menus">
                   <li className="menu-items">
-                  <Link to="/"> Home</Link>
+                    <Link to="/"> Home</Link>
                     {/* <a href="" className="menu-link">
                       Home
                     </a> */}
@@ -46,19 +68,22 @@ const Header = () => {
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                        <Link to="/Presidents"> Co Presidents | Founders</Link>
+                          <Link to="/Presidents">
+                            {" "}
+                            Co Presidents | Founders
+                          </Link>
                           {/* <a className="dropdown-item" href="#">
                             Co Presidents | Founders
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/SherwoodProfessionals">Professionals</Link>
+                          <Link to="/SherwoodProfessionals">Professionals</Link>
                           {/* <a className="dropdown-item" href="#">
                             Professionals
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/SherwoodBoardMembers">Board Members</Link>
+                          <Link to="/SherwoodBoardMembers">Board Members</Link>
                           {/* <a className="dropdown-item" href="#">
                             Board Members
                           </a> */}
@@ -83,25 +108,29 @@ const Header = () => {
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <li>
-                        <Link to="/BusinessAdvisoryServices">Business Advisory Services</Link>
+                          <Link to="/BusinessAdvisoryServices">
+                            Business Advisory Services
+                          </Link>
                           {/* <a className="dropdown-item" href="#">
                             Business Advisory Services
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/Corporate">Corporate Restructuring</Link>
+                          <Link to="/Corporate">Corporate Restructuring</Link>
                           {/* <a className="dropdown-item" href="#">
                             Corporate Restructuring
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/Liquid">Asset Liquidation and Monetization</Link>
+                          <Link to="/Liquid">
+                            Asset Liquidation and Monetization
+                          </Link>
                           {/* <a className="dropdown-item" href="#">
                             Asset Liquidation and Monetization
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/Financial">Financial Management</Link>
+                          <Link to="/Financial">Financial Management</Link>
                           {/* <a className="dropdown-item" href="#">
                             Financial Management
                           </a> */}
@@ -115,35 +144,38 @@ const Header = () => {
                             ></i>
                           </a>
                           <ul className="inner-dropdown-menu">
-                         
                             <li className="dropdown-item">
-                            <Link to="/Agencyip">Agency Ip Overview</Link>
+                              <Link to="/Agencyip">Agency Ip Overview</Link>
                               {/* <a href="#">Agency Ip Overview</a> */}
                             </li>
                             <li className="dropdown-item">
-                            <Link to="/Sales">Sales & Licensing</Link>
+                              <Link to="/Sales">Sales & Licensing</Link>
                               {/* <a href="#">Sales & Licensing</a> */}
                             </li>
                             <li className="dropdown-item">
-                            <Link to="/Strategy">Strategy</Link>
+                              <Link to="/Strategy">Strategy</Link>
                               {/* <a href="#">Strategy</a> */}
                             </li>
                           </ul>
                         </li>
                         <li>
-                        <Link to="/Lta">Liquidating Trust Agents | Distribution Agents</Link>
+                          <Link to="/Lta">
+                            Liquidating Trust Agents | Distribution Agents
+                          </Link>
                           {/* <a className="dropdown-item" href="#">
                             Liquidating Trust Agents | Distribution Agents
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/Debt">Debt Restructuring & Management</Link>
+                          <Link to="/Debt">
+                            Debt Restructuring & Management
+                          </Link>
                           {/* <a className="dropdown-item" href="#">
                             Debt Restructuring & Management
                           </a> */}
                         </li>
                         <li>
-                        <Link to="/Wellness">Wellness Reviews</Link>
+                          <Link to="/Wellness">Wellness Reviews</Link>
                           {/* <a className="dropdown-item" href="#">
                             Wellness Reviews
                           </a> */}
@@ -158,31 +190,31 @@ const Header = () => {
                     </div>
                   </li>
                   <li className="menu-items">
-                  <Link to="/Affilations">Affiliations & Memberships</Link>
+                    <Link to="/Affilations">Affiliations & Memberships</Link>
                     {/* <a href="" className="menu-link">
                       Affiliations & Memberships
                     </a> */}
                   </li>
                   <li className="menu-items">
-                  <Link to="/News"> News</Link>
+                    <Link to="/News"> News</Link>
                     {/* <a href="" className="menu-link">
                       News
                     </a> */}
                   </li>
                   <li className="menu-items">
-                  <Link to="/Blogs"> Blogs</Link>
+                    <Link to="/Blogs"> Blogs</Link>
                     {/* <a href="" className="menu-link">
                       Blogs
                     </a> */}
                   </li>
                   <li className="menu-items">
-                  <Link to="/Contactus">Contact Us</Link>
+                    <Link to="/Contactus">Contact Us</Link>
                     {/* <a href="" className="menu-link">
                       Contact Us
                     </a> */}
                   </li>
                   <li className="menu-items">
-                  <Link to="/Career">Careers</Link>
+                    <Link to="/Career">Careers</Link>
                     {/* <a href="" className="menu-link">
                       Careers
                     </a> */}
