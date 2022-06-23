@@ -31,7 +31,7 @@ const Home = () => {
     {
       id: 1,
       name: "Business Consulting",
-      des: "We take a holistic approach to understanding your business and developing a business solution specific to your needs.",
+      des: "We take a holistic approach to understanding your business  and developing a business solution specific to your needs.",
       img: services1,
     },
     {

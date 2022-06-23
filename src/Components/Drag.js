@@ -10,8 +10,22 @@ function DragDrop() {
   };
   return (
     <div className="drag-drop">
-      <label className="drag-drop-label" for="exampleFormControlTextarea1">Attach Cv</label>
-      <FileUploader handleChange={handleChange} name="file" types={fileTypes} />
+      
+        
+          
+            <label
+              className="drag-drop-label"
+              for="exampleFormControlTextarea1"
+            >
+              Attach Cv
+            </label>
+            <FileUploader
+              handleChange={handleChange}
+              name="file"
+              types={fileTypes}
+            />
+          
+       
     </div>
   );
 }

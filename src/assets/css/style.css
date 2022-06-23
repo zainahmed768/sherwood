@@ -921,12 +921,11 @@ footer .copyright p {
   font-size: 11px;
 }
 .testimonials_sec .testi-image img {
-  height: 480px;
+  height: 340px;
   object-fit: cover;
 }
 .services_sec .serive_box .service-name h3 {
-  font-size: 30px;
-  
+  font-size: 38px;
 }
 .newsletter .heading h4 {
   font-size: 25px;
@@ -941,7 +940,7 @@ footer .newsletter .newsletter_box .form-group .form-control {
   
 }
 .logoDv img {
-  width: 50%;
+  width: 100%;
 }
 footer .footer-content .head h4 {
   font-size: 20px;
@@ -962,6 +961,10 @@ footer .button-group a.btn-sherwood {
 .search-icons {
   position: absolute;
   right: 52px;
+}
+.services_sec .serive_box .service-name p {
+  font-size: 20px;
+  min-height: 50px;
 }
 }
 @media (max-width: 1250px) {
@@ -1093,5 +1096,18 @@ label.drag-drop-label {
     font-weight: 600;
     line-height: 82px;
     
+}
 
+.kiHXWb {
+
+  min-width: 100% !important;
+  max-width: 100% !important;
+ 
+}
+
+.drag-drop-label {
+  font-size: 15px;
+  color: #000000;
+  font-family: 'sf-text-pro';
+  padding: 15px 0px;
 }
