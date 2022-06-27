@@ -20,13 +20,49 @@ const Header = () => {
     tl.to(".slide-1", { width: 0 }).to("#introduction", { height: 0 });
     // Pre Loader Js
   }, []);
+
+  let currentUrl = window.location.href.split("/");
+  console.log(currentUrl[3]);
+
+  const mystyle = {
+    color: currentUrl[3] === "about" ? "#FFFF00" : 
+      currentUrl[3] === "services" ? "#32CD32" :  
+      currentUrl[3] === "Blogs"  ?  "#FFA500" : 
+      currentUrl[3] === "Affilations"  ?  "#87CEEB" :
+       currentUrl[3] === "News"  ?  "#800000" :
+       currentUrl[3] === "Contactus"  ?  "	#F0FFFF" :
+       currentUrl[3] === "Presidents"  ?  "		#808000" :
+       currentUrl[3] === "SherwoodProfessionals"  ?  "#008080" :
+       currentUrl[3] === "SherwoodBoardMembers"  ?  "	#800080" :
+       currentUrl[3] === "BusinessAdvisoryServices"  ?  "	#FF8000" :
+       currentUrl[3] === "Corporate"  ?  "	#ADD8E6" :
+       currentUrl[3] === "Liquid"  ?  "	#A52A2A" :
+       currentUrl[3] === "Financial"  ?  "#29A6A6." :
+       currentUrl[3] === "Lta"  ?  "#FFC0CB" :
+       currentUrl[3] === "Debt"  ?  "#16E2F5" :
+       currentUrl[3] === "Wellness"  ?  "#16F529" :
+       currentUrl[3] === "cash"  ?  "#FFFACD" :
+       currentUrl[3] === "Sherwoodpartners"  ?  "#FED8B1" :
+       currentUrl[3] === "Sherwoodfinance"  ?  "#C19A6B" :
+       currentUrl[3] === "Agencyip"  ?  "#C35817" :
+       currentUrl[3] === "Firsttime"  ?  "#F08080" : "#fff" ,
+  };
+
   return (
     <>
-      <div id="introduction">
+      <div id="introduction" 
+        
+      >
         <div className="slide-1 slide"></div>
         <div className="slide-2 slide"></div>
-        <div className="image-container">
-          <h1 className="for-loader">Sherwood</h1>
+        <div 
+          className="image-container"
+          >
+          <h1 
+            // className={currentUrl[3] === "about" ? "for-loader bg-yellow" : "for-loader bg-black"}
+            style={mystyle}
+          // className="for-loader"
+          >Sherwood</h1>
         </div>
       </div>
       {/* // <!-- Header Start Here --> */}
@@ -83,7 +119,7 @@ const Header = () => {
                           </a> */}
                         </li>
                         <li>
-                          <Link to="/SherwoodBoardMembers">Board Members</Link>
+                          <Link to="/SherwoodBoardMembers">Advisory board Members</Link>
                           {/* <a className="dropdown-item" href="#">
                             Board Members
                           </a> */}
@@ -137,7 +173,7 @@ const Header = () => {
                         </li>
                         <li className="inner-dropdown">
                           <a className="dropdown-item" href="#">
-                            Agency Ip{" "}
+                          agencyIP{" "}
                             <i
                               className="fa fa-angle-right"
                               aria-hidden="true"
@@ -145,7 +181,7 @@ const Header = () => {
                           </a>
                           <ul className="inner-dropdown-menu">
                             <li className="dropdown-item">
-                              <Link to="/Agencyip">Agency Ip Overview</Link>
+                              <Link to="/Agencyip">agencyIP Overview</Link>
                               {/* <a href="#">Agency Ip Overview</a> */}
                             </li>
                             <li className="dropdown-item">
@@ -154,6 +190,10 @@ const Header = () => {
                             </li>
                             <li className="dropdown-item">
                               <Link to="/Strategy">Strategy</Link>
+                              {/* <a href="#">Strategy</a> */}
+                            </li>
+                            <li className="dropdown-item">
+                              <Link to="/">Purchase or Lending against your patents</Link>
                               {/* <a href="#">Strategy</a> */}
                             </li>
                           </ul>

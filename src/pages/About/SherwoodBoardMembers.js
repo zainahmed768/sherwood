@@ -49,7 +49,7 @@ const SherwoodBoardMembers = () => {
     <>
       <Header />
       {/* page header starts here */}
-      <PageHeader pagename="Sherwood Board Members" pagelinkname="About Us" />
+      <PageHeader pagename="Sherwood advisory board Members" pagelinkname="About Us" />
       {/* page header ends here */}
       {/* winning sec starts here */}
       <section className="winning-sec">
@@ -58,7 +58,7 @@ const SherwoodBoardMembers = () => {
             <div className="col-lg-6">
               <div className="content-wrapper">
                 <h3>
-                  Sherwood <span>Board Members</span>
+                  Sherwood <span>advisory board Members</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>

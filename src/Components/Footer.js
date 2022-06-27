@@ -70,7 +70,7 @@ const Footer = () => {
                     {/* <a href="#">WELLNESS REVIEW</a> */}
                   </li>
                   <li>
-                    <Link to="/Agencyip">AGENCY IP</Link>
+                    <Link className="agencyip-name" to="/Agencyip">agency<span className="Ip-uppercase">IP</span> </Link>
                     {/* <a href="#">AGENCY IP</a> */}
                   </li>
                   <li>

@@ -9,6 +9,7 @@ import { winning, experience, Business, NoPicture } from "../../constant";
 import { Link, useNavigate } from "react-router-dom";
 // image import ends here
 
+
 const About = () => {
   let navigate = useNavigate();
   const teammembers = [

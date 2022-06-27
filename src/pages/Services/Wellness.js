@@ -18,9 +18,10 @@ const Wellness = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="content-wrapper Monetization ">
-                <h3>
+                {/* <h3>
                   Debt Renegotiations <span> & Restructuring</span>
-                </h3>
+                </h3> */}
+                <h3>A Complete Review of <span>a Company’s Financial Health</span></h3>
                 <div className="blue-divider"></div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
