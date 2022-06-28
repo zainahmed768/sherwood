@@ -173,7 +173,7 @@ const Header = () => {
                         </li>
                         <li className="inner-dropdown">
                           <a className="dropdown-item" href="#">
-                          agencyIP{" "}
+                         <Link to="/Agencyip">agencyIP{" "}</Link>
                             <i
                               className="fa fa-angle-right"
                               aria-hidden="true"

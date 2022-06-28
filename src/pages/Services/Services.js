@@ -43,7 +43,7 @@ const Services = () => {
     {
       id: 4,
       img: serv4,
-      name: "agency Ip",
+      name: "agencyIp",
       path: "/BusinessAdvisoryServices",
     },
     {
