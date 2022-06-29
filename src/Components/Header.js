@@ -45,7 +45,8 @@ const Header = () => {
        currentUrl[3] === "Sherwoodpartners"  ?  "#FED8B1" :
        currentUrl[3] === "Sherwoodfinance"  ?  "#C19A6B" :
        currentUrl[3] === "Agencyip"  ?  "#C35817" :
-       currentUrl[3] === "Firsttime"  ?  "#F08080" : "#fff" ,
+       currentUrl[3] === "Firsttime"  ?  "#F08080" : 
+       currentUrl[3] === "Purchase"  ?  "#eb8f34" : "#fff" ,
   };
 
   return (
@@ -193,7 +194,7 @@ const Header = () => {
                               {/* <a href="#">Strategy</a> */}
                             </li>
                             <li className="dropdown-item">
-                              <Link to="/">Purchase or Lending against your patents</Link>
+                              <Link to="/Purchase">Purchase or Lending against your patents</Link>
                               {/* <a href="#">Strategy</a> */}
                             </li>
                           </ul>

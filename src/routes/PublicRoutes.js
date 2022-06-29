@@ -104,19 +104,6 @@ const PublicRoutes = () => {
         <Route path="cash" element={<Cash />} />
         <Route path="Faq" element={<Faq />} />
         <Route path="Login" element={<Login />} />
-
-
-        
-
-        
-      
-     
-        
-
-
-
-
-        
       </Routes>
     </BrowserRouter>
   );
