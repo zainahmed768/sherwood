@@ -18,7 +18,7 @@ const Purchase=()=>{
             <div className="col-lg-6">
               <div className="content-wrapper">
                 <h3>
-                IP Purchase<span>Or Lending</span>
+                IP Purchase <span>Or Lending</span>
                 </h3>
                 <div className="blue-divider"></div>
                 <p>
