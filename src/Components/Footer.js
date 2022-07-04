@@ -47,7 +47,7 @@ const Footer = () => {
               </p>
               <div className="button-group">
                 <a href="#" className="btn-sherwood">
-                  Proof Claims
+                Proof of Claims Form
                 </a>
               </div>
             </div>

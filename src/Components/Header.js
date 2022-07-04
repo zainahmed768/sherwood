@@ -12,7 +12,7 @@ const Header = () => {
     // Pre Loader Js
     tl = gsap.timeline({
       defaults: {
-        duration: 1,
+        duration: 1.9,
         ease: "expo.inOut",
       },
     });
