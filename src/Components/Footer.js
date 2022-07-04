@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { footer_logo, linkedin } from "../constant";
+import { footer_logo, logo, linkedin } from "../constant";
 
 const Footer = () => {
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="col-lg-4 p-0 m-0">
               <div className="logoDv">
                 <figure>
-                  <img src={footer_logo} className="img-fluid" />
+                  <img src={logo} className="img-fluid" />
                 </figure>
               </div>
               <p className="for-font-size">
