@@ -31,37 +31,37 @@ const Home = () => {
     {
       id: 1,
       name: "Business Consulting",
-      des: "We take a holistic approach to understanding your business  and developing a business solution specific to your needs.",
+      des: "After 30+ years of building our successful advisory practice, we have the tools and know-how to see the big picture and develop and implement a solution to meet your goals. ",
       img: services1,
     },
     {
       id: 2,
       name: "Assignment and Liquidations",
-      des: "The Gold Standard to the Industry",
+      des: "Sherwood knows what to do and how to monetize your asset fully. We are the “Gold Standard for Assignments for the Benefit of Creditors (ABCs) and Liquidation Services",
       img: services2,
     },
     {
       id: 3,
       name: "Intellectual Property",
-      des: "Sales + Licensing + Strategy",
+      des: "Our rich database and deep relationships are critical to monetizing IP and your success. We help owners, creators, and holders of IP through Sales + Licensing + Strategy + Purchase or Loans against your IP. Your Success, Is Our Success.",
       img: services3,
     },
     {
       id: 4,
       name: "Financial Management",
-      des: "We Know The Industry & The Industry Knows Sherwood",
+      des: "The Sherwood team is well versed in all aspects of Financial Management. “We know the industry, and the industry knows Sherwood.” GET SHERWOOD! Get it done right the first time.",
       img: services4,
     },
     {
       id: 5,
       name: "Sales Licenses strategies & advisor",
-      des: "",
+      des: "We focus on sales, licensing, strategy, and lending against your patents and have the ability to lend or purchase your patents when appropriate. Our focus is strictly for our clients to have a successful outcome.",
       img: services5,
     },
     {
       id: 6,
       name: "IP Purchase or lending",
-      des: "",
+      des: "Loans or purchase against your patents can be tricky. We have solutions. When you are thinking of selling or borrowing against your patents, we may be able to assist.",
       img: services6,
     },
   ];
@@ -113,7 +113,6 @@ const Home = () => {
       });
   }, []);
 
-
   return (
     <>
       <Header />
@@ -129,14 +128,15 @@ const Home = () => {
         <div className="banner_content">
           <div className="container">
             <h2 className="title wow animate__animated animate__fadeInDown animate__delay-2s">
-              Sherwood
+              GET SHERWOOD
             </h2>
             <h5 className="wow animate__animated animate__fadeInDown animate__delay-3s">
-              THE GOLD STANDARD...Since 1992
+              The Gold Standard | Serving Clients Since 1992
             </h5>
+            <p>It all starts when tough decisions need to be made </p>
             <div className="button-group wow animate__animated animate__fadeInDown animate__delay-5s">
               <a href="#" className="lnk-btn">
-                Learn more{" "}
+                Get Started{" "}
                 <i className="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             </div>
@@ -155,23 +155,26 @@ const Home = () => {
                 </div>
                 <div className="description wow animate__animated animate__fadeInLeft animate__delay-1s">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse nisl nisl, venenatis at lectus ut, varius
-                    eleifend metus. Pellentesque accumsan condimentum ipsum vel
-                    pharetra. Nam lacinia, quam quis luctus aliquam, est est
-                    maximus eros, et suscipit orci orci pharetra leo. Aliquam
-                    tincidunt
+                    Companies continuously face various obstacles and Sherwood
+                    has been there to assist with proven solutions, since 1992.
+                    Our clients come first as we assist in working through their
+                    challenging situations. From financial management to
+                    monitoring performance, to monetizing IP. Managing a
+                    business can be difficult, and Sherwood has developed and
+                    implemented successful solutions. Who better than Sherwood
+                    knows what can go wrong?
                     <br />
                     <br />
-                    mollis auctor. Maecenas a convallis augue. Cras lorem ante,
-                    posuere a lectus sit amet, vehicula dapibus felis. Donec
-                    luctus dignissim maximus. Ut pharetra justo ac lorem tempus,
-                    eget porttitor mauris aliquet. Nullam
+                    Sherwood Partners is dedicated to serving our clients and
+                    has a reputation for delivering results. We help our clients
+                    comprehend what needs to be done and how we can solve the
+                    problem(s). Sherwood is with you through the entire
+                    implementation process.
                   </p>
                 </div>
                 <div className="button-group wow animate__animated animate__slideInLeft animate__delay-2s">
                   <a href="#" className="lnk-btn">
-                    Learn more{" "}
+                    About Us{" "}
                     <i className="fa fa-angle-right" aria-hidden="true"></i>
                   </a>
                 </div>
@@ -252,9 +255,14 @@ const Home = () => {
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
-                        Sherwood Knows the Industry and the Industry Knows
-                        Sherwood. “Sherwood was with the team through the entire
-                        process”
+                         I needed an advisor to understand and enhance my
+                        business. After so many interviews with other firms, as
+                        soon as I met with the Sherwood team, I knew Sherwood
+                        was the firm to assist my company and help me make the
+                        right decisions. They reviewed all areas of my company
+                        and developed a successful solution. The best part was
+                        that Sherwood was there through the entire
+                        implementation process. “I was never alone.”
                       </p>
                       <div className="bottom-bar">
                         <ul className="rating">
@@ -284,9 +292,14 @@ const Home = () => {
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
-                        Sherwood Knows the Industry and the Industry Knows
-                        Sherwood. “Sherwood was with the team through the entire
-                        process”
+                         I am now making more profits with fewer headaches, all
+                        because Sherwood helped me better understand my business
+                        and how to work through the daily pitfalls. The Sherwood
+                        team was great. They quickly evaluated and understood
+                        our problems, worked with our team to better understand
+                        the potential pitfalls of my business and assisted in
+                        implementing change. They were with us all the way for a
+                        successful outcome.
                       </p>
                       <div className="bottom-bar">
                         <ul className="rating">
@@ -316,9 +329,9 @@ const Home = () => {
                         <h3>I am happy with my consultation</h3>
                       </div>
                       <p>
-                        Sherwood Knows the Industry and the Industry Knows
-                        Sherwood. “Sherwood was with the team through the entire
-                        process”
+                         Sherwood had sound solutions for our business needs.
+                        My business was back on a successful path in just 6
+                        months after I hired Sherwood.
                       </p>
                       <div className="bottom-bar">
                         <ul className="rating">
