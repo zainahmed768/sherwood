@@ -13,10 +13,10 @@ const Footer = () => {
               <div className="col-lg-7">
                 <div className="heading">
                   <h4>Subscribe to Our Newsletter</h4>
-                  <p>
+                  {/* <p>
                     uspendisse mollis ante imperdiet, dictum sapien eu, suscipit
                     turpis. Curabitur enim purus, dignissim non
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="col-lg-5">
@@ -40,11 +40,11 @@ const Footer = () => {
                   <img src={logo} className="img-fluid" />
                 </figure>
               </div>
-              <p className="for-font-size">
+              {/* <p className="for-font-size">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.Lorem Ipsum has been the industry's standard dummy text
                 .
-              </p>
+              </p> */}
               <div className="button-group">
                 <a href="#" className="btn-sherwood">
                 Proof of Claims Form
