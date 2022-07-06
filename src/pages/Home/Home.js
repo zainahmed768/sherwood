@@ -30,13 +30,13 @@ const Home = () => {
   const services = [
     {
       id: 1,
-      name: "Business Consulting",
+      name: "Consulting and advisory services",
       des: "After 30+ years of building our successful advisory practice, we have the tools and know-how to see the big picture and develop and implement a solution to meet your goals. ",
       img: services1,
     },
     {
       id: 2,
-      name: "Assignment and Liquidations",
+      name: "Assignments for the Benefit of Creditors and Liquidations ",
       des: "Sherwood knows what to do and how to monetize your asset fully. We are the “Gold Standard for Assignments for the Benefit of Creditors (ABCs) and Liquidation Services",
       img: services2,
     },
@@ -54,7 +54,7 @@ const Home = () => {
     },
     {
       id: 5,
-      name: "Sales Licenses strategies & advisor",
+      name: "Sales + Licensing + Strategy + Purchase & Loans against IP",
       des: "We focus on sales, licensing, strategy, and lending against your patents and have the ability to lend or purchase your patents when appropriate. Our focus is strictly for our clients to have a successful outcome.",
       img: services5,
     },
