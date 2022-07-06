@@ -30,7 +30,7 @@ const Home = () => {
   const services = [
     {
       id: 1,
-      name: "Consulting and advisory services",
+      name: "Business Consulting and advisory services",
       des: "After 30+ years of building our successful advisory practice, we have the tools and know-how to see the big picture and develop and implement a solution to meet your goals. ",
       img: services1,
     },
