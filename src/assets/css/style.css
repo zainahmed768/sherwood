@@ -1132,3 +1132,9 @@ a.agencyip-name {
 span.Ip-uppercase {
   text-transform: uppercase;
 }
+.sherwood-dropdown {
+  padding: 0px;
+}
+.Advisory-img-wrapper img {
+  height: 270px;
+}

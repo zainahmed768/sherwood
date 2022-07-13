@@ -29,7 +29,7 @@ const Header = () => {
       currentUrl[3] === "services" ? "#32CD32" :  
       currentUrl[3] === "Blogs"  ?  "#FFA500" : 
       currentUrl[3] === "Affilations"  ?  "#87CEEB" :
-       currentUrl[3] === "News"  ?  "#800000" :
+       currentUrl[3] === "News"  ?  "#d00000" :
        currentUrl[3] === "Contactus"  ?  "	#F0FFFF" :
        currentUrl[3] === "Presidents"  ?  "		#808000" :
        currentUrl[3] === "SherwoodProfessionals"  ?  "#008080" :
@@ -173,7 +173,7 @@ const Header = () => {
                           </a> */}
                         </li>
                         <li className="inner-dropdown">
-                          <a className="dropdown-item" href="#">
+                          <a className="dropdown-item sherwood-dropdown" href="#">
                          <Link to="/Agencyip">agencyIP{" "}</Link>
                             <i
                               className="fa fa-angle-right"
@@ -186,7 +186,7 @@ const Header = () => {
                               {/* <a href="#">Agency Ip Overview</a> */}
                             </li>
                             <li className="dropdown-item">
-                              <Link to="/Sales">Sales & Licensing</Link>
+                              <Link to="/Sales">IP SALES + Licensing</Link>
                               {/* <a href="#">Sales & Licensing</a> */}
                             </li>
                             <li className="dropdown-item">

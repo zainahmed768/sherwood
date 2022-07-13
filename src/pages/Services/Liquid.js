@@ -5,7 +5,7 @@ import PageHeader from "../../Components/PageHeader";
 import liquid from "../../assets/img/liquid.png";
 import l1 from "../../assets/img/l1.png";
 import l2 from "../../assets/img/l2.png";
-import l3 from "../../assets/img/l3.png";
+import l3 from "../../assets/img/interim.webp";
 import l4 from "../../assets/img/l4.png";
 import l5 from "../../assets/img/l5.png";
 import "../../assets/css/advisory.css";
@@ -153,7 +153,7 @@ const Liquid = () => {
                       </h4>
                       <div className="blue-divider"></div>
                       <p>{data.des}</p>
-                     
+
                       <Link to="/">
                         Learn more <i className="fa fa-angle-right"></i>
                       </Link>

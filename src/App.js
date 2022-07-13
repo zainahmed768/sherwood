@@ -6,7 +6,7 @@ import "../src/assets/css/style.css";
 import WOW from "wowjs"
 // style.css ends here
 import PublicRoutes from "./routes/PublicRoutes";
-import "bootstrap/dist/js/bootstrap";
+// import "bootstrap/dist/js/bootstrap";
 import "@popperjs/core";
 function App() {
   useEffect(() => {

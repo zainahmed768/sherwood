@@ -4,7 +4,7 @@ import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
 import { experience } from "../../constant";
 import benefit from "../../assets/img/benefit.png";
-import dr from "../../assets/img/dr.png";
+import dr from "../../assets/img/health.webp";
 
 const Wellness = () => {
   return (

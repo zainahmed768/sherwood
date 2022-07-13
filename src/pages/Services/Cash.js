@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import PageHeader from "../../Components/PageHeader";
-import corpo from "../../assets/img/corpo.png";
+import corpo from "../../assets/img/cash.webp";
 
 const Cash =()=>{
     return(
