@@ -32,7 +32,7 @@ import sericon from "../assets/img/serv-icon.png";
 import serv1img from "../assets/img/ser1-img.png";
 import advisory1 from "../assets/img/Advisory1.png";
 import advisory2 from "../assets/img/Advisory2.png";
-import advisory3 from "../assets/img/Advisory3.png";
+import advisory3 from "../assets/img/interim.webp";
 import advisory4 from "../assets/img/Advisory4.png";
 import advisory5 from "../assets/img/Advisory5.png";
 
